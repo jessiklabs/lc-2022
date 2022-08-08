@@ -2,8 +2,88 @@
 
 <html>
    <head>
-      <title>Welcome to the Sword and Board!</title>
+      <title>The Sword &amp; Board!</title>
    </head>
 
-   <body></body>
+   <body>
+      <main><h1>Welcome to the Sword &amp; Board!</h1>
+         <article>
+            <header>
+               <h2>Character Overview</h2>
+            </header>
+            <img src="images/anglescurvy22.jpg" alt = "Scurvy profile image" width = 50%>
+            
+            <div>
+               <h3>Profile</h3>
+               <p>
+                  Name: Scurvy<br>Age: 42<br>Height: 6'2"<br>Race: Human<br>Birthplace: Port of Acknar<br>Element: Water
+               </p>
+              
+            </div>
+         </article>   
+            
+         <article>
+            <header><h2>Backstory</h2></header>
+            <div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam eveniet, unde, quas atque, mollitia earum ipsum alias neque aspernatur adipisci fuga at libero perferendis voluptates optio. Quod, voluptas ut.</p>
+               
+            </div>
+         </article>
+
+         <article>
+            <header><h2>Personality</h2></header>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim ipsa vitae corporis, iusto reiciendis explicabo nam, voluptatem itaque ipsum nulla quidem accusantium praesentium dicta beatae deleniti, architecto similique officiis voluptatibus.</p>
+         </article>
+         
+         <article>
+            <header><h2>Allies &amp; Associations</h2></header>
+            <p>Barkipp<br>Ah'yare<br>Embra Dinn</p>
+         </article>
+          
+         <!--<section>
+             <h3>Gallery</h3>
+             <p>
+               <img src="images/" width = 400>
+               <img src="images/Ahyareocto.jpg" width = 400>
+               <img src="images/Scratch.JPG" width = 400>
+               <img src="images/theTRAP.jpg" width = 400>
+               <img src="images/Scurvy_Attack21crop.jpg" width = 400>
+            </p>
+
+
+          </section> --> 
+         
+          <section>
+            <div class="row">
+               <div class="column">
+                 <img src="images/Ahyareocto.jpg" alt="Scurvy and Ahyare" onclick="myFunction(this);">
+               </div>
+               <div class="column">
+                 <img src="images/Scratch.JPG" alt="Scratch" onclick="myFunction(this);">
+               </div>
+               <div class="column">
+                 <img src="images/theTRAP.jpg" alt="The Trap" onclick="myFunction(this);">
+               </div>
+               <div class="column">
+                 <img src="images/Scurvy_Attack21crop.jpg" alt="Scurvy Water Attack" onclick="myFunction(this);">
+               </div>
+             </div>
+             
+             <!-- The expanding image container -->
+             <div class="container">
+               <!-- Close the image -->
+               <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+             
+               <!-- Expanded image -->
+               <img id="expandedImg" style="width:100%">
+             
+               <!-- Image text -->
+               <div id="imgtext"></div>
+             </div>
+          </section>
+         
+            
+      </main>
+      <footer>Copyright &copy 2022 JessiKLabs.  All rights reserved. <a href="mailto:jessica@jessiklabs.com">Contact Us!</a></footer>
+   </body>
 </html>
