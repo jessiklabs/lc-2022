@@ -2,70 +2,138 @@
 
 <html>
    <head>
+      <link rel="stylesheet" href="styles.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>The Sword &amp; Board!</title>
+
+      <script>
+         function myFunction(imgs) {
+           var expandImg = document.getElementById("expandedImg");
+           var imgText = document.getElementById("imgtext");
+           expandImg.src = imgs.src;
+           imgText.innerHTML = imgs.alt;
+           expandImg.parentElement.style.display = "block";
+         }
+         </script>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
    </head>
 
    <body>
       <main><h1>Welcome to the Sword &amp; Board!</h1>
-         <article>
-            <header>
+         <div><img id="ScurvyProfilePic" src="images/anglescurvy22.jpg" alt = "Scurvy profile image"></div>
+         <article class="headerlabel"><header>
                <h2>Character Overview</h2>
-            </header>
-            <img src="images/anglescurvy22.jpg" alt = "Scurvy profile image" width = 50%>
+            </header></article>
+         <div class="Article-flexbox">
+            
+               <article>
             
             <div>
                <h3>Profile</h3>
                <p>
-                  Name: Scurvy<br>Age: 42<br>Height: 6'2"<br>Race: Human<br>Birthplace: Port of Acknar<br>Element: Water
+                  Name: Scurvy<br>Age: 42<br>Height: 6'2"<br>Race: Human<br>Birthplace: Port of Acknar<br>Element: Water<br>Other Aliases: None
                </p>
               
             </div>
          </article>   
             
+         
+
          <article>
-            <header><h2>Backstory</h2></header>
+            <header><h3>Personality</h3></header>
+            <p id="personality">• Patient<br>
+               • Somewhat cautious<br>
+               • Reserved, but friendly<br>
+               • Laid back with a serious streak<br>
+               • Loud if intoxicated; likes to sing<br>
+               • Enjoys gambling, games of chance, and succubi<br>
+               • Still has a taste for heists<br>
+               • Adventurous</p>
+         </article>
+         
+        
+         </div>
+
+         <article id="allies">
+            <header><h3>Allies &amp; Associations</h3></header>
+            <p>Barkipp<br>Ah'yare<br>Embra Din<br>Shallot<br>The Adventurer's Guild</p>
+         </article> 
+
+          <article id="history">
+            <header><h3>History</h3></header>
             <div>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam eveniet, unde, quas atque, mollitia earum ipsum alias neque aspernatur adipisci fuga at libero perferendis voluptates optio. Quod, voluptas ut.</p>
+               <p>&nbsp;&nbsp;&nbsp;&nbsp;Born in the Port of Acknar to parents he never knew, Scurvy spent much of his childhood orphaned.  Intense storms often rock the port city, leaving many of the poorer inhabitants missing or dead.  Scurvy ended up in one of the many orphanages, where he and other children were treated as props to make the orphanage money.  When he was ten years old, several other orphans attempted an escape.  Scurvy took advantage of the confusion they caused and escaped himself.<br><br>
+
+                  &nbsp;&nbsp;&nbsp;&nbsp;For the next year he lived as a street urchin, stealing when he could and helping petty criminals for food.  He was particularly small due to malnourishment which made him quite good at getting into buildings, allowing him to let criminals inside.  Though he had some success, the first year was struggle, until he met the wizard Ah’Yare.<br><br>
+                  
+                  &nbsp;&nbsp;&nbsp;&nbsp;While pickpocketing the wizard, Scurvy was caught by a pocket octopus.  Ah’Yare was amused and taught the young urchin to better survive the streets.  With the knowledge that “Get strength with meats and weak with sweets” and a few more tricks, Scurvy began to grow, get stronger, and live overall better on the streets.  He continued to stay in touch with Ah’Yare periodically over the next few years.<br><br>
+               
+                  &nbsp;&nbsp;&nbsp;&nbsp;At fourteen he was severely injured when much of the Port of Acknar was destroyed in a battle between Ah’Yare and bounty hunters.  Feeling bad about causing a fatal injury to a child he had been helping, Ah’Yare performs illegal magical surgery.  Scurvy is saved by a water elemental implant, which also makes him a target to certain organizations.  To help him avoid these groups, Ah’Yare sends Scurvy to the Adventurer’s Guild, where he will be protected.<br><br>
+               
+                  &nbsp;&nbsp;&nbsp;&nbsp;Adventuring was not the life for Scurvy, so he arranges to join a pirate crew.  During his time as a pirate he eats magical meats and fruits, growing from a malnourished child into a strong man.  His first crew betrays him and sells him into slavery, where Scurvy stays for five years.  He eventually joins other prisoners in an escape, and then joins their crew.  He retires from them after a decade to rejoin the Adventurer’s Guild, so that he can fulfill new dreams.<br><br>
+               
+                  &nbsp;&nbsp;&nbsp;&nbsp;Two years in, at thirty-six he meets Ah’Yare again and joins the Sword&Board, where he works and resides to this day.<br><br><br></p>
                
             </div>
          </article>
-
-         <article>
-            <header><h2>Personality</h2></header>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim ipsa vitae corporis, iusto reiciendis explicabo nam, voluptatem itaque ipsum nulla quidem accusantium praesentium dicta beatae deleniti, architecto similique officiis voluptatibus.</p>
-         </article>
+         <article class="headerlabel">
+            <header>Character Gallery</header>
+         </article> 
          
-         <article>
-            <header><h2>Allies &amp; Associations</h2></header>
-            <p>Barkipp<br>Ah'yare<br>Embra Dinn</p>
-         </article>
-          
-         <!--<section>
-             <h3>Gallery</h3>
-             <p>
-               <img src="images/" width = 400>
-               <img src="images/Ahyareocto.jpg" width = 400>
-               <img src="images/Scratch.JPG" width = 400>
-               <img src="images/theTRAP.jpg" width = 400>
-               <img src="images/Scurvy_Attack21crop.jpg" width = 400>
-            </p>
-
-
-          </section> --> 
-         
-          <section>
+          <section class ="gallery">
             <div class="row">
                <div class="column">
-                 <img src="images/Ahyareocto.jpg" alt="Scurvy and Ahyare" onclick="myFunction(this);">
+                 <img src="images/Ahyareocto.jpg" alt="The Beer Run" onclick="myFunction(this);">
                </div>
                <div class="column">
-                 <img src="images/Scratch.JPG" alt="Scratch" onclick="myFunction(this);">
+                 <img src="images/Scurvkip22.jpg" alt="Let's Look Intimidating!" onclick="myFunction(this);">
                </div>
                <div class="column">
                  <img src="images/theTRAP.jpg" alt="The Trap" onclick="myFunction(this);">
                </div>
                <div class="column">
                  <img src="images/Scurvy_Attack21crop.jpg" alt="Scurvy Water Attack" onclick="myFunction(this);">
+               </div>
+             </div>
+
+             <div class="row">
+               <div class="column">
+                 <img src="images/Ogscurvy_.JPG" alt="The Original Scurvy" onclick="myFunction(this);">
+               </div>
+               <div class="column">
+                 <img src="images/Succubuscl.jpg" alt="Succubus Seduction" onclick="myFunction(this);">
+               </div>
+               <div class="column">
+                 <img src="images/Thescroll21.jpg" alt="Viewing the Scroll" onclick="myFunction(this);">
+               </div>
+               <div class="column">
+                 <img src="images/Scurvylute.jpg" alt="Summoning the Storm" onclick="myFunction(this);">
+               </div>
+             </div>
+
+             <div class="row">
+               <div class="column">
+                 <img src="images/Lineup22snbfull.jpg" alt="Sword and Board Lineup" onclick="myFunction(this);">
+               </div>
+               <div class="column">
+                 <img src="images/Sksk1.JPG" alt="Multiview Scurvy" onclick="myFunction(this);">
+               </div>
+               <div class="column">
+                 <img src="images/Sksk3.JPG" alt="Multiview Scurvy" onclick="myFunction(this);">
+               </div>
+               <div class="column">
+                 <img src="images/Scratch.JPG" alt="Scurvy Front and Side View" onclick="myFunction(this);">
+               </div>
+             </div>
+
+             <div class="row">
+               <div class="column">
+                 <img src="images/Scurhead1.JPG" alt="Scurvy Profile" onclick="myFunction(this);">
+               </div>
+              <div class="column">
+                 <img src="images/Scurv22viewsm.jpg" alt="Multiple Head Views 1" onclick="myFunction(this);">
                </div>
              </div>
              
